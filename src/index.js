@@ -54,7 +54,7 @@ if (WEBGL.isWebGLAvailable()) {
   //반응형 처리
   function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight
-    camera.updateWorldMatrix()
+    camera.updateProjectionMatrix()
     renderer.setSize(window.innerWidth, window.innerHeight)
   }
   window.addEventListener('resize', onWindowResize)
