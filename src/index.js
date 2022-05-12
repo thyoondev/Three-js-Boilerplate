@@ -38,6 +38,12 @@ if (WEBGL.isWebGLAvailable()) {
   obj03.position.x = 1
   scene.add(obj03)
 
+  //조명
+  const color = 0xffffff
+  const intensity = 1
+  const light = new THREE.AmbientLight(color, intensity) //자연광
+  scene.add(light)
+
   function render(time) {
     time *= 0.0005 // convert time to seconds
 
